@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fearless Steps Challenge: Phase 4</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css"> 
+	
+</head>
+<body>
+<div class="page-wrapper">
+<div class="top-banner">
+<h1> Fearless Steps Challenge:<br>Phase IV</h1>
+
+
+</div>
+<div class="top-top-nav">
+
+<div class="tabs">
+	<div class="tabs-img">
+		<img src="images/top-1.jpg" alt="Fearless Engineering" id="fearless">
+		
+		</div>
+	<div class="links">
+		<!--<a href="#Track_1"><u><strong>Speech Activity Detection</strong></u></a><br>-->
+		
+		<div class="link_list">
+			<a href="#Data">FSC-4 Challenge Data</a><br>
+			<!--<a href="#Track_1">Baseline</a><br>
+			<a href="#Track_1">References</a><br>-->
+		
+		</div>
+		
+		
+	</div>
+</div>
+<div class="image-top" >
+<img src="images/Logos.png" alt="" id="logo">
+</div>
+<div class="top-nav">
+		<a  href="index.html">Home</a>
+
+		<a class="active" href="Data.html">FSC-4 Data</a>
+		
+		<a href="SAD.html">SAD</a>
+		<a href="DIAR.html">DIAR</a>
+		<a href="SID.html">SID</a>
+		<a href="SV.html">SV</a>
+		<a href="ASR.html">ASR</a>
+		<a href="Conv.html">Topic Detection</a>
+		<a href="ISCA_2022.html">ISCA 2022</a>
+		
+	</div>
+     <div class="article" id="Data">
+<h2>FSC-4 Challenge Data</h2>
+<img src="images/Stages.png" alt="Stages of the Mission" id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Figure shows the Stages of the Mission</p><br>
+  						<p>The Stages 1, 5 and 6 were high impact mission-critical events which is ideal for the development of the 110-hour Challenge Corpus from Apollo 11. In addition to this, additional 10 hours of previously unreleased Apollo-8 Mission audio, and 5 hours of Apollo-13 Mission audio will be made available for participants. With the quality of speech data varying between  0 and 20 dB SNR in this challenge corpus, the channel variability and complex interactions across all five channels of interest are mostly encapsulated in the Challenge Corpus. The multichannel data (from Apollo-11) are chosen from the major events given below:</p>
+  						<ul>
+  								<li> Lift Off (25 hours)</li><br>
+								<li> Lunar Landing (50 hours)</li><br>
+								<li> Lunar Walking (25 hours)</li><br>
+						</ul>
+						<p>These landmark events have been found to possess rich information from the speech and language perspective.five channels out of the 29 channels were picked since it had the the most activity over the selected events. </p>
+						<ul>
+  								<li> Flight Director (FD) </li><br>
+								<li> Mission Operations Control Room (MOCR)</li><br>
+								<li> Guidance Navigation and Control (GNC)</li><br>
+								<li> Network Controller (NTWK) </li><br>
+								<li> Electrical, Environmental and Consumables Manager (EECOM) </li><br>
+						</ul>
+						<p>The personnel operating these five channels (channel owners/primary speakers) were in command of the most critical aspects of the mission, with additional backroom staff looping in for interactions with the primary owners of this channel.</p>
+						<p>For Fearless Steps Challenge Phase-04, CRSS-UTDallas are collaborating with National Institute of Standards and Technology (NIST) and Linguistic Data Consortium (LDC) to host the Challenge using NIST web-resources, and LDC data-resources. Challenge submissions and scoring for all participants will be made available through thee NIST web-portal. Researchers will be able to use training and development transcripts for tasks other than their focus and use these transcripts to improve their systems. Additionally, researchers will also be able to use any publicly available data to train (and develop/advance) their systems. </p>
+						<p> The distributions and statistics in the below sections are only for Apollo-11 </p> <br>
+						<img src="images/DT1.png" alt="Table 1 the shows distribution of total speech content" id="fsc"><br>
+						<p>The distribution of total speech content in each of the channels for every event has been given in the table above. Total speech content in the challenge corpus amounts to approximately 36 hours.</p>
+<p>To make sure there is an equitable distribution of data into training, evaluation, and development sets for the challenge tasks, we have categorized the data based on noise levels, amount of speech content, and amount of silence. Due to the long silence durations, and based on importance of the mission, the speech activity density of the corpus varies throughout the mission.</p>
+						<img src="images/DT2.png" alt="Table 2 shows the Signal to Noise Ratio Statistics per channel for Dev Data" id="fsc"><br>
+						<p>The above table above is a general analysis of the Challenge data. Even though the Researchers are not provided with the channel information of Train, Test and Dev Sets, they may be able to make inferences by computing SNR’s for each file.</p>
+						<img src="images/SDP.PNG" alt="Probability Distributions of decision parameters for Train, Dev, and Eval sets." id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Figure 2: Probability Distributions of decision parameters for Train, Dev, and Eval sets.</p><br>
+						<p>  All decision parameters for 100 hours of audio streams are calculated individually.
+These parameters are then normalized to generate degradation scores across the 100 hours. These scores are time-aligned across
+5 channels and averaged to provide a single degradation score
+per 30-minute time chunk.  The above figure shows the probability distributiions of decision parameters for Train, Dev, and Eval sets. This displays that even when the overall degradation across multiple
+channels are large, due to the variances in channel characteristics,
+the distributions for Train, Dev, and Eval sets have similar
+means, but differing distributions.						
+						
+						</p>
+						<img src="images/ISCATB3.PNG" alt="Duration Statistics of audio segments for ASR track2." id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Table 3: Duration Statistics of audio segments for ASR track2.</p><br>
+						<p>Shorter utterance durations and larger variations in speaker durations
+are portrayed in Table 3, illustrating the general duration statistics of audio segments provided for the ASR track2 task.
+
+						
+						</p>
+						
+						<img src="images/ISCATB2.PNG" alt="General statistics for the SID task." id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Table 4: General statistics for the SID task.</p><br>
+						<p>Simialar statistics are shown for the SID task in Table 4. The mean, median, minimum, and maximum values
+for cumulative speaker durations, and individual speaker utterances are all expressed in seconds.
+
+						
+						</p>
+						
+						<img src="images/ISCATB4.PNG" alt="Baseline Results for Development and Evaluation Sets." id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Table 5: Baseline Results for Development and Evaluation Sets.</p><br>
+						<p>Table 5 shows the baseline results for Fearless Steps Challenge: Phase 02 for Development and Evaluation Sets
+
+						
+						</p>
+						<img src="images/ISCATB5.PNG" alt="Comparision of FSC1 and FSC2." id="fsc" >
+ 						<p style="font-size: 18px;text-align: center;">Table 6: Comparison of the best systems developed for all FS-1
+and FS-2 challenge tasks.</p><br>
+						<p>Table 6 shows Comparison of the best systems developed for all FS-1
+and FS-2 challenge tasks. Relative improvement of top-ranked
+system per task in FS-2 over FS-1 is illustrated.
+
+
+						
+						</p>
+
+
+</div>
+</div>
+</div>
+
+</body>
+
+
+</html>
